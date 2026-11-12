@@ -11,17 +11,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5a8e6d8-663f-4eb8-ae2b-a7242d6f9cfd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Manager/TerrainManager.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Manager/TerrainManager.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/__Workspaces/Julien/Scenes/GamePCJulien.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/__Workspaces/Julien/Scenes/GamePCJulien.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.2025-Mobile-Castle-Rush/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2025-Mobile-Castle-Rush/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Instanciate/SpawnEnemyButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Instanciate/SpawnEnemyButton.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Instanciate/SpawnSpellButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Instanciate/SpawnSpellButton.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePC.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buttons/EnemyButtonSpawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buttons/EnemyButtonSpawn.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buttons/SpellButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buttons/SpellButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/__Workspaces/Julien/Scripts/Manettes/CursorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/__Workspaces/Julien/Scripts/Manettes/CursorController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

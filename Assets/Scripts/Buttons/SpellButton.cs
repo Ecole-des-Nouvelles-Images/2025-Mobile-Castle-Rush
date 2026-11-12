@@ -4,18 +4,20 @@ using DG.Tweening;
 using Player;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Utils;
 
 namespace Buttons
 {
-    public class SpellButton : MonoBehaviour
+    public class SpellButton : MonoBehaviour, ISelectHandler, IDeselectHandler
     {
         public bool AreSelected;
         public SpellClass SpellClass;
         
         [SerializeField] private TMP_Text _priceText;
         [SerializeField] private Image _image;
+        [SerializeField] private Image _outLine;
 
         private Vector3 _basePosition;
         [SerializeField] private CursorController _controlleManager;
@@ -25,7 +27,7 @@ namespace Buttons
             EventBus.OnLevelFinished += DisableClick;
             EventBus.OnPlayerTakedCard += EnableClick;
             //EventBus.OnPlayerPlaceSpell += UnselectedVisuel;
-            EventBus.OnLevelFinished += UnselectedVisuel;
+            EventBus.OnLevelFinished += ConfirmUnselectedVisuel;
         }
 
         private void OnDisable()
@@ -33,7 +35,7 @@ namespace Buttons
             EventBus.OnLevelFinished -= DisableClick;
             EventBus.OnPlayerTakedCard -= EnableClick;
             //EventBus.OnPlayerPlaceSpell -= UnselectedVisuel;
-            EventBus.OnLevelFinished -= UnselectedVisuel;
+            EventBus.OnLevelFinished -= ConfirmUnselectedVisuel;
         }
         
         private void Start()
@@ -55,24 +57,24 @@ namespace Buttons
             if (SpellClass == InventoryHandler.Instance.EquipedSpell)
             {
                 //InventoryHandler.Instance.UnEquipSpell();
-                UnselectedVisuel();
+                ConfirmUnselectedVisuel();
                 return;
             }
-            UnselectedVisuel();
-            SelectedVisual();
+            ConfirmUnselectedVisuel();
+            ConfirmSelectedVisual();
             //_controlleManager.EnableCursorSpell();
             InventoryHandler.Instance.EquipedSpell = SpellClass;
             EventBus.OnPlayerSelectSpell?.Invoke();
         }
 
-        public void SelectedVisual()
+        public void ConfirmSelectedVisual()
         {
             transform.DOLocalMoveY(_basePosition.y + 30, 0.2f);
             AreSelected = true;
         }
         
         [ContextMenu("Reset visual")]
-        public void UnselectedVisuel()
+        public void ConfirmUnselectedVisuel()
         {
             GameObject parent = transform.parent.gameObject;
             for (int i = 0; i < parent.transform.childCount; i++)
@@ -91,6 +93,18 @@ namespace Buttons
         private void DisableClick()
         {
             gameObject.GetComponent<Button>().interactable = false;
+        }
+
+        public void OnSelect(BaseEventData eventData)
+        {
+            Debug.Log("OnSelect");
+            _outLine.color = Color.white;
+        }
+
+        public void OnDeselect(BaseEventData eventData)
+        {
+            Debug.Log("OnCancel");
+            _outLine.color = Color.black;
         }
     }
 }
