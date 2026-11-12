@@ -185,11 +185,7 @@ namespace Player
             SpawnManager.Instance.SpawnTextInWorldPosition("-" + EquipedSpell.Price, new Color32(233,90,255,255), new Vector3(spell.transform.position.x, spell.transform.position.y + 1.5f, spell.transform.position.z));
             EventBus.OnPlayerPlaceSpell?.Invoke();
         }
-        // public void UnEquipSpell()
-        // {
-        //     EquipedSpell = null;
-        //     Debug.Log("Unequipped spell");
-        // }
+       
         public void SetVisuelSpell(SpellClass spellClass)
         {
             if (spellClass == null) return;

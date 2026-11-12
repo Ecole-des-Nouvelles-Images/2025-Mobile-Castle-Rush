@@ -100,7 +100,7 @@ public class CursorController : MonoBehaviour
         
         ClickManager.Instance.LastPosition = transform.position;
         InventoryHandler.Instance.DropSpell();
-        SlectedCard.GetComponent<SpellButton>().UnselectedVisuel();
+        SlectedCard.GetComponent<SpellButton>().ConfirmUnselectedVisuel();
         Debug.Log("Player place spell");
     }
 
@@ -117,7 +117,7 @@ public class CursorController : MonoBehaviour
         _uiInputModule.enabled = true;
         Cursor.SetActive(false);
         
-        if (SlectedCard.GetComponent<SpellButton>()) SlectedCard.GetComponent<SpellButton>().UnselectedVisuel();
+        if (SlectedCard.GetComponent<SpellButton>()) SlectedCard.GetComponent<SpellButton>().ConfirmUnselectedVisuel();
     }
 
     private void Update()
