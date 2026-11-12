@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c63d793ce70fd2b4c989e2f4b884c9bd, type: 3}
   m_Name: Vampiric
   m_EditorClassIdentifier: Assembly-CSharp::ScriptableObjectsScripts.Spells.SoSpell
-  Sprite: {fileID: 21300000, guid: d3f56e490c6cdef4eb9cf33f623bb729, type: 3}
+  Sprite: {fileID: 21300000, guid: 7882fcbb4d2ad9142809f17873f4035b, type: 3}
   Price: 50
   Time: 5
   AreaSize: 4
   Efficiency: 150
   Prefab: {fileID: 7817341195606274728, guid: 868ba46513aaa5340aa15b501d194b55, type: 3}
   SpawnSounds:
-  - {fileID: 8300000, guid: c179c81b4905742498b2625bdcf77b85, type: 3}
+  - {fileID: 8300000, guid: d2594d05624cae1458ece26f20db2bee, type: 3}

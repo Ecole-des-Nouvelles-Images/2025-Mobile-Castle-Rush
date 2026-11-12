@@ -12,6 +12,7 @@ namespace Managers
     {
         [Header("IA choice")]
         public Vector2Int ChoiceAi;
+        public Vector4 LimiteZoneTower;
         
         [Header(" Money ")]
         public int MoneyToAddParLevel;
@@ -98,10 +99,19 @@ namespace Managers
                 _heuristicResults.Remove(finalResult);
 
                 PathManager.Instance.CellsMatrix[Mathf.FloorToInt(finalResult.position.x), Mathf.FloorToInt(finalResult.position.y)].IsTower = true;
-                Instantiate(finalResult.DefenseBaseData.Prefab, new Vector3(finalResult.position.x, 0, finalResult.position.y), Quaternion.identity, transform);
+                GameObject turel = Instantiate(finalResult.DefenseBaseData.Prefab, new Vector3(finalResult.position.x, 0, finalResult.position.y), Quaternion.identity, transform);
+                if (finalResult.position.x < LimiteZoneTower.x || finalResult.position.x > LimiteZoneTower.y ||  finalResult.position.y < LimiteZoneTower.z || finalResult.position.y > LimiteZoneTower.w)
+                {
+                    Destroy(turel);
+                    continue;
+                }
                 Money -= finalResult.DefenseBaseData.Price;
+                
+                
             }
+            Debug.Log("AVANT IA placed tower");
             EventBus.OnIaPlaceTower?.Invoke();
+            Debug.Log("APRES IA placed tower");
         }
         
         

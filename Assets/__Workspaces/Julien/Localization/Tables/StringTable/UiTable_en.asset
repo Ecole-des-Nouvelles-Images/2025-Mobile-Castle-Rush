@@ -35,17 +35,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 38376692629504
-    m_Localized: 'Thanks to the contributors
+    m_Localized: 'Team:
 
-      Team:
+      Julien DURAND: Product Owner
 
-      Julien DURAND:
-      Product Owner
+      Calvin OVIDE:
+      Lead Artist
 
-      Calvin OVIDE: Lead Artist
-
-      Regina LUKOYANOVA:
-      Artist
+      Regina LUKOYANOVA: Artist
 
       Sasha BILORE: Artist'
     m_Metadata:

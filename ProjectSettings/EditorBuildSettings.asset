@@ -5,12 +5,24 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: fcf4c40b1ecd60e499e7e70efdd90858
-  - enabled: 1
-    path: Assets/Scenes/Game.unity
+  - enabled: 0
+    path: Assets/Scenes/GameMobil.unity
     guid: 7ca25c81c7ae58242be33ad6e287a6a3
+  - enabled: 1
+    path: Assets/Scenes/MainMenuPc.unity
+    guid: 3ba82fe9e7dd27a46987d62bfd957c16
+  - enabled: 1
+    path: Assets/Scenes/GamePC.unity
+    guid: e47937c6455ba154ab008d7fa2ff82da
+  - enabled: 0
+    path: Assets/__Workspaces/Julien/Scenes/MainMenuJulien.unity
+    guid: ef778ec8be075904eb0f9e1a584ee436
+  - enabled: 0
+    path: Assets/__Workspaces/Julien/Scenes/JulienGameScene.unity
+    guid: 4f3ebde56d7c42d4a91502e22ef70d89
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 65485d65e3290694c80f7783ee4f5784, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 61e4246ec9422414f8e316191b61d953, type: 2}

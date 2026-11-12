@@ -1,0 +1,2 @@
+C:\Users\Julie\OneDrive\Images\Bureau\LocaRepository\2025-Mobile-Defenseless-Tower\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+C:\Users\Julie\OneDrive\Images\Bureau\LocaRepository\2025-Mobile-Defenseless-Tower\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt

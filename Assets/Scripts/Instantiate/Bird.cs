@@ -56,6 +56,8 @@ public class Bird : MonoBehaviour, IClickable
         InventoryHandler.Instance.Elixir += randElixir;
         SpawnManager.Instance.SpawnVfxInPosition(PrefabVFX, transform.position);
         SoundManager.Instance.PlayRandomSound(ScreemSFX, gameObject, true);
+        SpawnManager.Instance.SpawnTextInWorldPosition("+" + randMoney, new Color32(255,185,42,255), new Vector3(transform.position.x, transform.position.y + 1f, transform.position.z - 0.4f));
+        SpawnManager.Instance.SpawnTextInWorldPosition("+" + randElixir, new Color32(233,90,255,255), new Vector3(transform.position.x, transform.position.y + 1f, transform.position.z + 0.4f));
         Destroy(gameObject);
     }
 

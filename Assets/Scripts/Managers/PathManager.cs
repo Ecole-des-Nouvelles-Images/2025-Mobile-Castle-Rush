@@ -22,6 +22,7 @@ namespace Managers
         [SerializeField] private GameObject _ground;
     
         [SerializeField] private GameObject _castlePrefab;
+        public Vector3 PositionCastleA;
         [SerializeField] private GameObject _castleEnemiePrefab;
     
         [SerializeField] private List<GameObject> _cellGameObjects = new List<GameObject>();
@@ -106,6 +107,7 @@ namespace Managers
             BezierKnot lastKnot = spline[spline.Count - 1];
         
             castleA.transform.position = new Vector3(firstKnot.Position.x, firstKnot.Position.y, firstKnot.Position.z);
+            PositionCastleA = castleA.transform.position;
         
             castleB.transform.position = new Vector3(lastKnot.Position.x, lastKnot.Position.y, lastKnot.Position.z);
             castleB.transform.rotation = new quaternion(0,180,0,1);

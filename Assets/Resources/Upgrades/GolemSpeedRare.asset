@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0327de44edfdfdc459c027d230b93bb2, type: 3}
+  m_Name: GolemSpeedRare
+  m_EditorClassIdentifier: Assembly-CSharp::UpgradeEnemy
+  Name: 
+  Srite: {fileID: 21300000, guid: 52f32c831e163d942bb708028414ef85, type: 3}
+  Rarity: 2
+  Description: Augmente beaucoup plus la vitesse du golem.
+  LocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:2724c991b7225f448a45154986c910b1
+    m_TableEntryReference:
+      m_KeyId: 1773248305577984
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  TargetData: {fileID: 11400000, guid: 7bc1f4e436a3a06438f4dcec631c771f, type: 2}
+  PriceToAdd: 0
+  HealthToAdd: 0
+  NumberToSpawnToAdd: 0
+  SpeedToAdd: 0.9
+  references:
+    version: 2
+    RefIds: []

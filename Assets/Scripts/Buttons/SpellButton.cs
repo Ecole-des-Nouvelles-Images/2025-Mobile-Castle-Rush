@@ -13,17 +13,18 @@ namespace Buttons
     {
         public bool AreSelected;
         public SpellClass SpellClass;
-    
+        
         [SerializeField] private TMP_Text _priceText;
         [SerializeField] private Image _image;
 
         private Vector3 _basePosition;
+        [SerializeField] private CursorController _controlleManager;
         
         private void OnEnable()
         {
             EventBus.OnLevelFinished += DisableClick;
             EventBus.OnPlayerTakedCard += EnableClick;
-            EventBus.OnPlayerPlaceSpell += UnselectedVisuel;
+            //EventBus.OnPlayerPlaceSpell += UnselectedVisuel;
             EventBus.OnLevelFinished += UnselectedVisuel;
         }
 
@@ -31,12 +32,14 @@ namespace Buttons
         {
             EventBus.OnLevelFinished -= DisableClick;
             EventBus.OnPlayerTakedCard -= EnableClick;
-            EventBus.OnPlayerPlaceSpell -= UnselectedVisuel;
+            //EventBus.OnPlayerPlaceSpell -= UnselectedVisuel;
             EventBus.OnLevelFinished -= UnselectedVisuel;
         }
         
         private void Start()
         {
+            if (GameObject.FindWithTag("Controller"))_controlleManager = GameObject.FindWithTag("Controller").GetComponent<CursorController>();
+            
             _basePosition = transform.position;
             SetUp();
         }
@@ -52,13 +55,15 @@ namespace Buttons
         {
             if (SpellClass == InventoryHandler.Instance.EquipedSpell)
             {
-                InventoryHandler.Instance.UnEquipSpell();
+                //InventoryHandler.Instance.UnEquipSpell();
                 UnselectedVisuel();
                 return;
             }
             UnselectedVisuel();
             SelectedVisual();
+            //_controlleManager.EnableCursorSpell();
             InventoryHandler.Instance.EquipedSpell = SpellClass;
+            EventBus.OnPlayerSelectSpell?.Invoke();
         }
 
         public void SelectedVisual()
@@ -68,7 +73,7 @@ namespace Buttons
         }
         
         [ContextMenu("Reset visual")]
-        private void UnselectedVisuel()
+        public void UnselectedVisuel()
         {
             GameObject parent = transform.parent.gameObject;
             for (int i = 0; i < parent.transform.childCount; i++)
@@ -76,6 +81,7 @@ namespace Buttons
                 parent.transform.GetChild(i).GetComponent<SpellButton>().AreSelected = false;
                 parent.transform.GetChild(i).gameObject.transform.DOLocalMoveY(_basePosition.y, 0.2f);
             }
+            //_controlleManager.PlaceSpell();
             InventoryHandler.Instance.EquipedSpell = null;
         }
         

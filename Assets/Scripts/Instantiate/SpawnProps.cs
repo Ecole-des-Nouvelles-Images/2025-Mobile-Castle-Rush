@@ -13,7 +13,7 @@ namespace Instantiate
         public int NumberPropos;
     
         [SerializeField] private string _ressourcePath;
-        [SerializeField] private List<GameObject> _prefabsProps = new List<GameObject>();
+        [SerializeField] public List<GameObject> _prefabsProps = new List<GameObject>();
         public bool DoRandomRotation;
 
         private void OnEnable()
@@ -53,7 +53,7 @@ namespace Instantiate
             {
                 int randProps = Random.Range(0, _prefabsProps.Count);
                 Vector2Int vector2Int = positions[Random.Range(0, positions.Count)];
-            
+                
                 GameObject props = Instantiate(_prefabsProps[randProps], new Vector3(vector2Int.x,0,vector2Int.y), Quaternion.identity, transform);
 
                 if (DoRandomRotation)

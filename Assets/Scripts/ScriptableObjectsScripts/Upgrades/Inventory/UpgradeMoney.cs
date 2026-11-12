@@ -10,7 +10,7 @@ namespace ScriptableObjectsScripts.Upgrades.Inventory
     
         public override void Apply(InventoryHandler inventary)
         {
-            inventary.StartMoney += MoneyToAdd;
+            inventary.MaxMoney += MoneyToAdd;
         }
     }
 }

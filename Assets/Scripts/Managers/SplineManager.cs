@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using ScriptableObjectsScripts.Difficulty;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.Serialization;
 using UnityEngine.Splines;
 using Utils;
@@ -127,6 +128,8 @@ namespace Managers
             PlacePenultimateKnot();
             PlaceLastKnot();
             ParcourSpline();
+            
+            Debug.Log("Spline LOADED with lvl" + Difficulty.name);
         }
 
         private void PlacePenultimateKnot()

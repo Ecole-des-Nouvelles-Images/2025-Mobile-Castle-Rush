@@ -39,7 +39,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1770150837239808
-    m_Localized: Augmente beaucoup la taille du sort de gel.
+    m_Localized: Augmente extremement la taille du sort de gel.
     m_Metadata:
       m_Items: []
   - m_Id: 1770818247475200
@@ -51,7 +51,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1771405613613056
-    m_Localized: Le gel dure beaucoup plus longtemps.
+    m_Localized: Le gel dure extremement plus longtemps.
     m_Metadata:
       m_Items: []
   - m_Id: 1771830207201280
@@ -63,7 +63,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1772625728258048
-    m_Localized: Augmente beaucoup plus la vie du golem.
+    m_Localized: Augmente extremement la vie du golem.
     m_Metadata:
       m_Items: []
   - m_Id: 1772847338504192
@@ -75,7 +75,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1773248305577984
-    m_Localized: Augmente beaucoup plus la vitesse du golem.
+    m_Localized: Augmente extremement la vitesse du golem.
     m_Metadata:
       m_Items: []
   - m_Id: 1773484948209664
@@ -87,7 +87,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1774418927435776
-    m_Localized: "Augmente beaucoup plus l'efficacit\xE9 du soin."
+    m_Localized: "Augmente extremement l'efficacit\xE9 du soin."
     m_Metadata:
       m_Items: []
   - m_Id: 1774569079324672
@@ -99,7 +99,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1774917592432640
-    m_Localized: 'Augmente beaucoup plus la taille du soin.
+    m_Localized: 'Augmente extremement la taille du soin.
 
 '
     m_Metadata:
@@ -113,7 +113,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1775756176408576
-    m_Localized: Le soin dure beaucoup plus longtemps.
+    m_Localized: Le soin dure extremement plus longtemps.
     m_Metadata:
       m_Items: []
   - m_Id: 1775913559277568
@@ -125,7 +125,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1776326228459520
-    m_Localized: Augmente beaucoup plus la vie du chevalier.
+    m_Localized: Augmente extremement la vie du chevalier.
     m_Metadata:
       m_Items: []
   - m_Id: 1776464179118080
@@ -146,7 +146,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1778134661349376
-    m_Localized: Augmente beaucoup plus la vitesse du chevalier.
+    m_Localized: Augmente extremement la vitesse du chevalier.
     m_Metadata:
       m_Items: []
   - m_Id: 1778480204890112

@@ -1,6 +1,7 @@
 using System.Collections;
 using ScriptableObjectsScripts.Difficulty;
 using UnityEngine;
+using UnityEngine.Rendering;
 using Utils;
 
 namespace Managers
@@ -17,7 +18,7 @@ namespace Managers
 
 
         public SoDifficultySpline DifficultySplineTest;
-    
+        
         private void OnEnable()
         {
             EventBus.OnLevelFinished += LoadSelectionCard;

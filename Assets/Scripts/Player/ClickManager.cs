@@ -56,7 +56,7 @@ namespace Player
             Ray ray = _camera.ScreenPointToRay(Input.mousePosition);
         
             RaycastHit hit;
-            Debug.DrawRay(ray.origin, ray.direction * 10f, Color.red, 5f);
+            Debug.DrawRay(ray.origin, ray.direction * 20f, Color.red, 5f);
             if (Physics.Raycast(ray, out hit,Mathf.Infinity, _layerMask )) 
             {
                 LastPosition = hit.point;

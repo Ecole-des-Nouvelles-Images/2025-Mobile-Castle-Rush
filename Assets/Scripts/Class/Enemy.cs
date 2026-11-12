@@ -136,7 +136,7 @@ namespace Class
                 0.1f
             ).SetLoops(2, LoopType.Yoyo);
             
-            SpawnManager.Instance.SpawnTextInWorldPosition(damage.ToString(), Color.red, new Vector3(transform.position.x,transform.position.y + 2,transform.position.z));
+            SpawnManager.Instance.SpawnTextInWorldPosition(damage.ToString(), new Color32(255,22,0,255), new Vector3(transform.position.x,transform.position.y + 2,transform.position.z));
             EventBus.OnEnemyTookDamage?.Invoke(damage, this);
         }
 
@@ -144,6 +144,9 @@ namespace Class
         {
             _health = Mathf.Clamp(_health + health, 0, _maxHealth);
             _healthBar.fillAmount = _health / _maxHealth;
+            float popRand = Random.Range(0, 100);
+            float rand = Random.Range(-0.5f, 0.5f);
+            if (popRand < 20) SpawnManager.Instance.SpawnTextInWorldPosition("+", new Color32(115,255,0,255), new Vector3(transform.position.x, transform.position.y + 2, transform.position.z + rand));
             
             float targetValue = 0.5f;
             

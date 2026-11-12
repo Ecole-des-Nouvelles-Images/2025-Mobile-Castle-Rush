@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScriptableObjectsScripts.EnemyBaseData
   Name: Witch
   Sprite: {fileID: 21300000, guid: bcc5990f1e42f1745813897225962523, type: 3}
-  price: 20
-  Speed: 10
-  Health: 500
+  price: 75
+  Speed: 8.5
+  Health: 125
   NumberToSpawn: 1
   Damage: 1
   OffsetX: {x: 0, y: 0}

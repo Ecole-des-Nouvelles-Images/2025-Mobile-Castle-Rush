@@ -30,11 +30,13 @@ namespace Utils
         public static Action OnPlayerSelectCard;
         public static Action OnplayerPlaceTroup;
         public static Action OnPlayerPlaceSpell;
+        public static Action OnPlayerSelectSpell;
         public static Action OnInventoryAreUpdated;
         public static Action OnPlayerClicked;
         public static Action OnPlayerUseMoney;
         public static Action OnPlayerUseElixir;
         public static Action OnPlayerTakedCard;
+        public static Action OnInventoryUpdate;
     
         // IA
         public static Action OnTerrainGenerate;

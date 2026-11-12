@@ -9,6 +9,7 @@ TagManager:
   - Castle
   - Tower
   - Props
+  - Controller
   layers:
   - Default
   - TransparentFX

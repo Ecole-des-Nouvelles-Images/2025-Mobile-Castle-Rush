@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Spell
   Sprite: {fileID: 21300000, guid: 7cfd1d59654d43543a2ebedd6231c22a, type: 3}
   Price: 30
-  Time: 4
+  Time: 7
   AreaSize: 2
   Efficiency: 0
   Prefab: {fileID: 71184059631829469, guid: 20aa65777e03a1242bb8c7d0bb1470ac, type: 3}

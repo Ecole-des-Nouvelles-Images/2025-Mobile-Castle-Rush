@@ -28,7 +28,6 @@ namespace Menu
         {
             _panelToClose.SetActive(false);
             EventBus.OnGameResume?.Invoke();
-            Debug.Log("OnGame resume");
         }
     }
 }

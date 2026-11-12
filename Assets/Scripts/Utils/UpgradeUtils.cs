@@ -35,7 +35,9 @@ namespace Utils
         {
             List<Upgrade> upgrades = new List<Upgrade>();
             List<Upgrade> upgradeRessource = avaibleUpgrade;
-
+            
+            
+            
             for (int i = 0; i < communCardNumber; i++)
             {
                 int randomIndex = Random.Range(0, upgradeRessource.Count);
@@ -58,7 +60,6 @@ namespace Utils
                 if (upgrade.Rarity == Rarity.Moyen)
                 {
                     upgrades.Add(upgrade);
-                    Debug.Log(upgrade.Rarity);
                 }
                 else
                 {

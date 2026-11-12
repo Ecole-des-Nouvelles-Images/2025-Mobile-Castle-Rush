@@ -75875,6 +75875,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1834239009}
+  - component: {fileID: 1834239011}
   - component: {fileID: 1834239008}
   - component: {fileID: 1834239007}
   - component: {fileID: 1834239010}
@@ -76003,6 +76004,18 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &1834239011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834239006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bd2d390ec14b7d45aea82b299ae2b41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotateScreen
 --- !u!1001 &1889325610
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76825,7 +76838,13 @@ MonoBehaviour:
   StartMoney: 0
   StartElixir: 0
   _money: 0
+  MaxTimeBeforeGetMoney: 0
+  MoneyParHit: 0
   _elixir: 0
+  MaxTimeBeforeGetElixir: 0
+  ElixirParHit: 0
+  _elixirSpawnTextPosition: {x: 0, y: 0, z: 0}
+  _moneySpawnTextPosition: {x: 0, y: 0, z: 0}
   EquipedSpell:
     SpellData: {fileID: 0}
     Price: 0

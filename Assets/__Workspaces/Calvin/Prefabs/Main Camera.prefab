@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6254421319865201553}
-  - component: {fileID: 3024617727527640878}
+  - component: {fileID: 2826776902365698145}
   - component: {fileID: 2823190110632159776}
   - component: {fileID: 3063554792471608672}
   - component: {fileID: 8877044670616329588}
@@ -35,7 +35,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 45, y: -90, z: 0}
---- !u!114 &3024617727527640878
+--- !u!114 &2826776902365698145
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,11 +44,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6768233035022820802}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cea6b46ae2e9ed4dbea8a2be05870de, type: 3}
+  m_Script: {fileID: 11500000, guid: eb49c46072d5ec4459ef36ee62144ca5, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CameraLetterbox
-  _targetXAspect: 16
-  _targetYAspect: 10
+  m_EditorClassIdentifier: Assembly-CSharp::CameraZoom
+  baseOrthographicSize: 9.58
 --- !u!20 &2823190110632159776
 Camera:
   m_ObjectHideFlags: 0
