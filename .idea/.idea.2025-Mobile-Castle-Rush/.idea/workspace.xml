@@ -12,10 +12,13 @@
   <component name="ChangeListManager">
     <list default="true" id="f5a8e6d8-663f-4eb8-ae2b-a7242d6f9cfd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.2025-Mobile-Castle-Rush/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2025-Mobile-Castle-Rush/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameMobil.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameMobil.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePC.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HUD/GameOver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HUD/GameOver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Instanciate/Card.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Instanciate/Card.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Instanciate/SpawnEnemyButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Instanciate/SpawnEnemyButton.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Instanciate/SpawnSpellButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Instanciate/SpawnSpellButton.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Class/Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Class/Card.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/__Workspaces/Julien/Prefabs/PanelParent.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/__Workspaces/Julien/Prefabs/PanelParent.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/__Workspaces/Julien/SO/Enemies/Petit(Cheat).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/__Workspaces/Julien/SO/Enemies/Petit(Cheat).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/__Workspaces/Julien/Scenes/GamePCJulien.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/__Workspaces/Julien/Scenes/GamePCJulien.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

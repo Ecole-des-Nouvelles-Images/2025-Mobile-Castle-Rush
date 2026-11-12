@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Petit(Cheat)
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
   Name: Petit
-  Sprite: {fileID: 21300000, guid: d3f56e490c6cdef4eb9cf33f623bb729, type: 3}
+  Sprite: {fileID: 21300000, guid: fae3b4fcc70683841b0438ef79dc8582, type: 3}
   price: 0
   Speed: 150
   Health: 100000
@@ -23,3 +23,6 @@ MonoBehaviour:
   OffsetZ: {x: -0.5, y: 0.5}
   OffsetUp: 0
   Prefab: {fileID: 6006436640752362767, guid: aef00fca65789f843a5756129a3798eb, type: 3}
+  SpawnSounds: []
+  DeadSounds: []
+  VFXPrefab: {fileID: 0}
