@@ -46,8 +46,7 @@ namespace Buttons
 
         public void SetUp()
         {
-            _image =  GetComponent<Image>();
-            _image.sprite = SpellClass.SpellData.Sprite;
+            if(_image) _image.sprite = SpellClass.SpellData.Sprite;
             _priceText.text = SpellClass.SpellData.Price.ToString();
         }
 

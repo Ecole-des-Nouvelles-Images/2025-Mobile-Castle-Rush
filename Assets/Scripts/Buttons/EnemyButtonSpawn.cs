@@ -27,14 +27,13 @@ namespace Buttons
         
         private void Start()
         {
-            _image = GetComponent<Image>();
             SetUp();
         }
 
         public void SetUp()
         {
             _priceText.text = EnemyClass.price.ToString();
-            _image.sprite = EnemyClass.baseData.Sprite;
+            if(_image) _image.sprite = EnemyClass.baseData.Sprite;
         }
 
         public void OnClick()
