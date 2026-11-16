@@ -57,6 +57,7 @@ MonoBehaviour:
   _eventSystem: {fileID: 0}
   _pauseButton: {fileID: 0}
   LimitZones: {x: 2, y: 15, z: 0, w: 21}
+  _keepSpellSelected: 1
 --- !u!114 &4822218574297887637
 MonoBehaviour:
   m_ObjectHideFlags: 0
