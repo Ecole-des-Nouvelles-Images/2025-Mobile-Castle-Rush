@@ -89,7 +89,7 @@ namespace Class
                 var image = _outLineParent.transform.GetChild(i).GetComponent<Image>();
                 image.color = Color.white;
             }
-            _imageParent.DOBlendableColor(Color.white, 0.5f);
+            //_imageParent.DOBlendableColor(Color.white, 0.5f);
         }
 
         public void OnDeselect(BaseEventData eventData)
@@ -99,7 +99,7 @@ namespace Class
                 var image = _outLineParent.transform.GetChild(i).GetComponent<Image>();
                 image.color = Color.black;
             }
-            _imageParent.DOBlendableColor(_unselectedColor, 0.5f);
+            //_imageParent.DOBlendableColor(_unselectedColor, 0.5f);
         }
     }
 }

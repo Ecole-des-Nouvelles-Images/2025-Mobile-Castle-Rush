@@ -25,7 +25,9 @@ public class CursorController : MonoBehaviour
     [SerializeField] private PauseButton _pauseButton;
 
     [SerializeField] private Vector4 LimitZones;
-    
+
+    [SerializeField] private bool _keepSpellSelected;
+
     private Rigidbody _rigidbody;
     private PlayerInput _playerInput;
     private ControllerInputHandler _inputHandler;
@@ -92,16 +94,22 @@ public class CursorController : MonoBehaviour
     public void ClickWithSpell()
     {
         if (!HaveSpeel || GameInPause) return;
-        HaveSpeel = false;
-        //_playerInput.enabled = false;
-        //_inputHandler.enabled = false;
-        _uiInputModule.enabled = true;
-        Cursor.SetActive(false);
-        
+
+        // Pose du sort (dans les deux cas)
         ClickManager.Instance.LastPosition = transform.position;
         InventoryHandler.Instance.DropSpell();
-        SlectedCard.GetComponent<SpellButton>().ConfirmUnselectedVisuel();
         Debug.Log("Player place spell");
+
+        // Le spell reste sélectionné : on ne désactive rien
+        if (_keepSpellSelected) return;
+
+        // Le spell est désélectionné : retour à l'UI
+        HaveSpeel = false;
+        _uiInputModule.enabled = true;
+        Cursor.SetActive(false);
+
+        if (SlectedCard != null && SlectedCard.TryGetComponent(out SpellButton spellButton))
+            spellButton.ConfirmUnselectedVisuel();
     }
 
     /// <summary>
