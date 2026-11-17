@@ -12,21 +12,24 @@
   <component name="ChangeListManager">
     <list default="true" id="f5a8e6d8-663f-4eb8-ae2b-a7242d6f9cfd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.2025-Mobile-Castle-Rush/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2025-Mobile-Castle-Rush/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Instanciate/Card.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Instanciate/Card.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Instanciate/SpawnEnemyButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Instanciate/SpawnEnemyButton.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Instanciate/SpawnSpellButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Instanciate/SpawnSpellButton.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Class/Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Class/Card.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/__Workspaces/Julien/Prefabs/PanelParent.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/__Workspaces/Julien/Prefabs/PanelParent.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/__Workspaces/Julien/SO/Enemies/Petit(Cheat).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/__Workspaces/Julien/SO/Enemies/Petit(Cheat).asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/__Workspaces/Julien/Scenes/GamePCJulien.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/__Workspaces/Julien/Scenes/GamePCJulien.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Manager/TerrainManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Manager/TerrainManager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePC.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Instantiate/SpawnProps.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Instantiate/SpawnProps.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c80b42b80a6b4f929e8a04e3926765411f5a00/28/694e6b7f/Debug.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Immediate Window" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="McpProjectServerCommands">
     <commands />
@@ -43,6 +46,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -78,13 +82,15 @@
       <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false" ignored-value-for-modified-check="26016">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="26016" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list />
+        <list>
+          <MonoRuntime />
+        </list>
       </option>
       <option name="selectedOptions">
         <list />

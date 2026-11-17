@@ -875,7 +875,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5517105813087588296}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -924,10 +924,11 @@ MonoBehaviour:
   NumberPropos: 20
   _ressourcePath: Props
   _prefabsProps:
-  - {fileID: 6452611896048928391, guid: afb2295d227b45f4888f104f55c42be6, type: 3}
-  - {fileID: 7379092841875697255, guid: d30ef895c938e3b4280e5594abd55c5b, type: 3}
-  - {fileID: 72852224530934392, guid: c62b84cd334469142a96b4eb5b2f631e, type: 3}
-  - {fileID: 7726191488110423481, guid: b28e08e24ddef8d49a5e0d7903188e69, type: 3}
+  - {fileID: 1138893925200865618, guid: 3927e895e1f97ee41b9a28c072d45055, type: 3}
+  - {fileID: 4602207266827521493, guid: 47888f07f419cd040914d828a726434c, type: 3}
+  - {fileID: 6759048806470160778, guid: 5e8755e16687c704691ff49c1553bd7d, type: 3}
+  - {fileID: 8806013828940898453, guid: ae4010ad9055990408249d45f0760b66, type: 3}
+  - {fileID: 3071516531747767950, guid: 7159892284e0f204ba1984059228893c, type: 3}
   DoRandomRotation: 1
 --- !u!114 &4594507477283816239
 MonoBehaviour:
@@ -943,7 +944,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Instantiate.SpawnProps
   NumberPropos: 7
   _ressourcePath: KitsProps
-  _prefabsProps: []
+  _prefabsProps:
+  - {fileID: 2390532453288296733, guid: cfb794078f99b70438ac699821fe72d1, type: 3}
+  - {fileID: 6452611896048928391, guid: afb2295d227b45f4888f104f55c42be6, type: 3}
+  - {fileID: 7379092841875697255, guid: d30ef895c938e3b4280e5594abd55c5b, type: 3}
+  - {fileID: 72852224530934392, guid: c62b84cd334469142a96b4eb5b2f631e, type: 3}
+  - {fileID: 7726191488110423481, guid: b28e08e24ddef8d49a5e0d7903188e69, type: 3}
   DoRandomRotation: 0
 --- !u!1 &5551674823071040678
 GameObject:
